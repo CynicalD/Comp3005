@@ -25,6 +25,7 @@ def getAllStudents():
     cur.close()
     conn.close()
 
+#adds student
 def addStudents(first_name, last_name, email, enrollment_date):
     try:
         with connect_to_db() as conn:
@@ -36,7 +37,7 @@ def addStudents(first_name, last_name, email, enrollment_date):
                     """,
                     (first_name, last_name, email, enrollment_date)
                 )
-                conn.commit()
+                conn.commit()       #saves changes
                 print(f"Added student: {first_name}, {last_name}")
     except Exception as e:
         print("Error happened while adding student")
@@ -50,6 +51,7 @@ def updateStudentEmail(student_id, new_email):
         "UPDATE students SET email = %s WHERE student_id = %s;",
         (new_email, student_id)
     )
+    #saves changes
     conn.commit()
     print(f"Updated student {student_id}'s email to {new_email}")
 
@@ -64,6 +66,7 @@ def deleteStudent(student_id):
         "DELETE FROM students WHERE student_id = %s;",
         (student_id,)
     )
+    #saves changes
     conn.commit()
     print(f"Sucessfully deleted student #{student_id}")
 
@@ -74,5 +77,5 @@ def deleteStudent(student_id):
 if __name__ == "__main__":
     #addStudents("Rayan", "Hassan", "rayan.hassan@example.com", "2025-10-7")
     #updateStudentEmail(2, "new.email@example.com")
-    deleteStudent(5)
+    #deleteStudent(5)
     getAllStudents()

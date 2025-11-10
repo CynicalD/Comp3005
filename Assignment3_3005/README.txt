@@ -7,8 +7,9 @@ Name: Rayan Hassan Student_ID: 101310730
 - Git 
 
 STEP 1: Clone the repo
-    git clone <GithubRepoURL>
-    then cd into assignment3
+    GitHub Repository:
+        https://github.com/CynicalD/Comp3005
+    then cd into assignment3_3005
 
 STEP 2: Create and populate db
     Create the databse callign it assignment3 and table called student and populate it with data from spec
@@ -22,4 +23,7 @@ STEP 3: Create & activate VENV and install requirements
 STEP 4: Run app.py 
     Make sure PostgreSQL is running.
     Now run: pyton3 app.py and it should perform CRUD opeartions as shown in video.
+
+
+
     
