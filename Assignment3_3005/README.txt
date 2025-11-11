@@ -8,7 +8,7 @@ Name: Rayan Hassan Student_ID: 101310730
 
 STEP 1: Clone the repo
     GitHub Repository:
-        https://github.com/CynicalD/Comp3005
+        run: git clone https://github.com/CynicalD/Comp3005
     then cd into assignment3_3005
 
 STEP 2: Create and populate db
@@ -22,8 +22,8 @@ STEP 3: Create & activate VENV and install requirements
 
 STEP 4: Run app.py 
     Make sure PostgreSQL is running.
-    Now run: pyton3 app.py and it should perform CRUD opeartions as shown in video.
+    Now run: python3 app.py and it should perform CRUD opeartions as shown in video.
 
 
-
+Youtube link video: https://youtu.be/EtIMZ0PSduE
     
